@@ -1,0 +1,28 @@
+CS 2200 Spring 2018
+Project 4
+
+Name: Jame Heaton
+GT Username: jheaton9
+
+Problem 1B
+----------
+
+Increasing the number of CPUs decreases the execution time, but it is not a
+linear realtionship. Increasing from 1 to 2 CPUs almost halves the execution
+time but any further additions only result in small decreases.
+
+Problem 2B
+----------
+
+See output.txt showing outputs for RR scheduler.
+Whilst wait time decreasing with decreasing time slice, having the shortest
+timeslice possible would severely decrease the throughput of the scheduler
+since processes are constantly switching.
+
+Problem 3B
+----------
+
+For one CPU, Round Robin algorithm produces the lowest waiting time. This is 
+because FCFS suffers from convoy effect and SRTF suffers from starvation. Round
+robin gives equal opportunity to all jobs.
+
