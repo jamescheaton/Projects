@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:id = "@+id/new_alert">
+
+    <EditText
+    android:id="@+id/alert_address"
+    android:layout_width="148dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="41dp"
+    android:layout_marginTop="130dp"
+    android:ems="10"
+    android:inputType="textPostalAddress"
+    android:text = "Address"/>
+
+
+    <EditText
+        android:id="@+id/alert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/send_alert_when"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_address"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="30dp"
+        android:text="Send out Alert when a Wildfire is"
+        android:textSize = "18dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/alert_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/push_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_alert_when"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="250dp"
+        android:text="Push Notification"
+        android:textSize = "20sp"/>
+
+    <TextView
+        android:id="@+id/call_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_alert_when"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="300dp"
+        android:text="Call Notification"
+        android:textSize = "20sp"/>
+
+
+    <TextView
+    android:id="@+id/text_notification"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/send_alert_when"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="41dp"
+    android:layout_marginTop="350dp"
+    android:text="Text Notification"
+    android:textSize = "20sp"/>
+<!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/text_child">
+
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop = "5dp"
+            android:text="Please enter your cell number below"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/text_alert_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart = "15dp"
+            android:layout_marginTop = "45dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/text_alert_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop = "45dp"
+            android:layout_toEndOf="@+id/text_alert_num"
+            android:text="Confirm" />
+    </RelativeLayout>
+-->
+    <TextView
+        android:id="@+id/email_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_alert_when"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="400dp"
+        android:text="Email Notification"
+        android:textSize = "20sp"/>
+
+    <Switch
+        android:id="@+id/push_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_toolbar"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Switch
+        android:id="@+id/call_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_toolbar"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="300dp"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Switch
+        android:id="@+id/text_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_toolbar"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="350dp"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Switch
+        android:id="@+id/email_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_toolbar"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="400dp"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/select_on_map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/alert_address"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop = "130dp"
+        android:layout_toEndOf="@+id/alert_address"
+        android:text="Select on Map" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="500dp"
+        android:text="Save New Alert" />
+
+
+</FrameLayout>
