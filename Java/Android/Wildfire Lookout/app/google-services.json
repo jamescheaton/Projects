@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "317517759386",
+    "firebase_url": "https://wildfire-lookout-1549928094248.firebaseio.com",
+    "project_id": "wildfire-lookout-1549928094248",
+    "storage_bucket": "wildfire-lookout-1549928094248.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317517759386:android:dfbce1b04e35529d",
+        "android_client_info": {
+          "package_name": "com.example.hsmul.fireinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317517759386-1lfmdk9afvo32gja1otdhme45ocsuk8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hsmul.fireinfo",
+            "certificate_hash": "82242a97834e668e96457aa9d519875f433a1db9"
+          }
+        },
+        {
+          "client_id": "317517759386-jakth4q5m83muhps6ahgdfdlv4bm8sbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6D33em0RcwKEmF74eqhnf2hd6J1dcll4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317517759386-jakth4q5m83muhps6ahgdfdlv4bm8sbv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "317517759386-248ca6raieaouqbu4lq5mft6gc8i7hb1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.noahjsutter.Wildfire-Lookout"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
